@@ -110,18 +110,20 @@
     .header {
       position: fixed;
       top: 0;
-      left: 50%;
+      left: 0;
       width: 100%;
-      max-width: $pc-max-width;
-      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+      background-color: #fff;
       z-index: 2;
 
       > div {
+        width: 100%;
+        max-width: $pc-max-width;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 8px 24px;
-        background-color: #fff;
+        padding-block: 8px;
 
         .con_left {
           display: flex;
