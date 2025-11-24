@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Mock Next.js Image component for Storybook
 const MockNextImage = ({ src, alt, width, height, sizes, ...props }: any) => {
   return (
@@ -9,10 +7,10 @@ const MockNextImage = ({ src, alt, width, height, sizes, ...props }: any) => {
       width={width}
       height={height}
       sizes={sizes}
-      style={{ 
-        maxWidth: '100%', 
+      style={{
+        maxWidth: '100%',
         height: 'auto',
-        display: 'block'
+        display: 'block',
       }}
       {...props}
     />
